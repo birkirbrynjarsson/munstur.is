@@ -21,7 +21,6 @@ Hannyrðir, Vefnaður, Hvítar Útsaumsgerðir, Jurtalitun, Gömul Mynstur, Mill
 - **PHP** — `include_once` templating with shared header, navigation, and footer fragments
 - **jQuery** + **prettyPhoto** — image lightbox galleries
 - **Custom CSS** — `style.css`, `css/style3.css`
-- **Google Analytics** — UA-23383639-2
 
 ## Project Structure
 
