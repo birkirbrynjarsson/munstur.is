@@ -1,15 +1,15 @@
-<?php include_once('header.html') ?>
+{{ include "/templates/header.html" }}
 
 <body id="subpage">
     <div class="wrap_all">
         <div id="top">
             <div id="head">
 
-                <?php include_once('navigation.html') ?>
+                {{ include "/templates/navigation.html" }}
 
                 <p class="breadcrumb">
                     <span class="breadcrumb_info">Þú ert hér:</span>
-                    <a href="http://munstur.is/index.php">Munstur.is</a><span> » </span><span class="current_crumb">Altarisdúkar </span></p>
+                    <a href="/">Munstur.is</a><span> » </span><span class="current_crumb">Altarisdúkar </span></p>
             </div><!-- end head-->
 
             <div id="main">
@@ -116,7 +116,7 @@
                                     <a href="/images/altarisdukar/syningar/1.jpg" rel="prettyPhoto[altaris-syningar]"><img class="alignleft" src="/images/altarisdukar/syningar/1-tn.jpg" alt="" /></a></p>
 
                                 <h3 style="padding-top:1em;">Styrkir sem verkefnið hefur fengið</h3>
-                                <p>Verkefnið Altarisdúkar hefur frá því það hófst hlotið styrki frá ýmsum menningar- og styrktarsjóðum á landinu sem nægt hafa til að standa straum af kostnaði, svo sem við ljósmyndun, ferðakostnað, prentun ofl. Þar á meðal eru Kristnihátíðarsjóður, sem fleytti verkefninu af stað í upphafi, Þjóðhátíðarsjóður, Atvinnumálasjóður kvenna, Langamýri, Menningar- og listasjóður Þingeyinga, Menningarráð Norðurlands vestra, Kirkjumálasjóður, Menningarráð Suðurlands og fleiri sjóðir. Fyrir það allt erum við sem að verkefninu stöndum afar þakklátar.</p>
+                                <p>Verkefnið Altarisdúkar hefur frá því það hófst hlotið styrki frá ýmsum menningar- og styrktarsjóðum á landinu sem nægt hafa til að standa straum af kostnaði, svo sem við ljósmyndun, ferðakostnað, prentun ofl. Þar á meðal eru Kristnihátíðarsjóður, sem fleytti verkefninu af stað í upphafi, Þjóðhátíðarsjóður, Atvinnumálasjóður kvenna, Langamýri, Menningar- og listasjóður Þingeyinga, Menningarráð Norðurlands vestra, Kirkjumálasjóður, Menningarráð Suðurlands og fleiri sjóðir. Fyrir það allt erum við sem að verkefninu stöndum afar þakklátar.
 
 
                             </div>
@@ -126,14 +126,14 @@
 
                     </div><!-- end inner_content-->
 
-                    <?php include_once('sidebar.html') ?>
+                    {{ include "/templates/sidebar.html" . }}
 
                 </div><!-- end content-->
 
             </div>
             <!--end main-->
 
-            <?php include_once('footer.html') ?>
+            {{ include "/templates/footer.html" . }}
 
         </div>
         <!--end top-->

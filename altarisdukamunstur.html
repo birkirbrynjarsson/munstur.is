@@ -1,15 +1,15 @@
-<?php include_once('header.html') ?>
+{{ include "/templates/header.html" }}
 
 <body id="subpage">
 <div class="wrap_all">
     <div id="top">
         <div id="head">
 
-            <?php include_once('navigation.html') ?>
+            {{ include "/templates/navigation.html" }}
 
             <p class="breadcrumb">
             <span class="breadcrumb_info">Þú ert hér:</span>
-            <a href="http://munstur.is/index.php">Munstur.is</a><span> » </span><span class="current_crumb">Altarisdúkamunstur </span></p>
+            <a href="/">Munstur.is</a><span> » </span><span class="current_crumb">Altarisdúkamunstur </span></p>
         </div><!-- end head-->
 
         <div id="main">
@@ -213,7 +213,7 @@
             <div class="entry_portfolio_noside">
                 <div class="small_box box1">
                     <div class="portfolio_item_noside">
-                    <!--<h3><a href="http://munstur.is/baekur/hannyrdir.php">Hannyrðir</a></h3>-->
+                    <!--<h3><a href="/baekur/hannyrdir.php">Hannyrðir</a></h3>-->
                     <a href="images/altarisdukar/munstur/dukur6_mynd.jpg"><img src="images/altarisdukar/munstur/dukur6_mynd_tn.jpg" alt="" /></a>
                     </div>
                     <p>Heklaður altarisdúkur</p>
@@ -230,7 +230,7 @@
             <div class="entry_portfolio_noside">
                 <div class="small_box box1">
                     <div class="portfolio_item_noside">
-                    <!--<h3><a href="http://munstur.is/baekur/hannyrdir.php">Hannyrðir</a></h3>-->
+                    <!--<h3><a href="/baekur/hannyrdir.php">Hannyrðir</a></h3>-->
                     <a href="images/altarisdukar/munstur/dukur7_mynd.jpg"><img src="images/altarisdukar/munstur/dukur7_mynd_tn.jpg" alt="" /></a>
                     </div>
                     <p>Heklaður altarisdúkur</p>
@@ -281,7 +281,7 @@
             <div class="entry_portfolio_noside">
                 <div class="small_box box1">
                     <div class="portfolio_item_noside">
-                    <!--<h3><a href="http://munstur.is/baekur/hannyrdir.php">Hannyrðir</a></h3>-->
+                    <!--<h3><a href="/baekur/hannyrdir.php">Hannyrðir</a></h3>-->
                     <a href="images/altarisdukar/munstur/dukur1_mynd.jpg"><img src="images/altarisdukar/munstur/dukur1_mynd_tn.jpg" alt="" /></a>
                     </div>
                     <p>Heklaður altarisdúkur</p>
@@ -298,7 +298,7 @@
             <div class="entry_portfolio_noside">
                 <div class="small_box box1">
                     <div class="portfolio_item_noside">
-                    <!--<h3><a href="http://munstur.is/baekur/hannyrdir.php">Hannyrðir</a></h3>-->
+                    <!--<h3><a href="/baekur/hannyrdir.php">Hannyrðir</a></h3>-->
                     <a href="images/altarisdukar/munstur/dukur2_mynd.jpg"><img src="images/altarisdukar/munstur/dukur2_mynd_tn.jpg" alt="" /></a>
                     </div>
                     <p>Heklaður altarisdúkur</p>
@@ -315,7 +315,7 @@
             <div class="entry_portfolio_noside">
                 <div class="small_box box1">
                     <div class="portfolio_item_noside">
-                    <!--<h3><a href="http://munstur.is/baekur/hannyrdir.php">Hannyrðir</a></h3>-->
+                    <!--<h3><a href="/baekur/hannyrdir.php">Hannyrðir</a></h3>-->
                     <a href="images/altarisdukar/munstur/dukur3_mynd.jpg"><img src="images/altarisdukar/munstur/dukur3_mynd_tn.jpg" alt="" /></a>
                     </div>
                     <p>Heklaður altarisdúkur</p>
@@ -332,7 +332,7 @@
             <div class="entry_portfolio_noside">
                 <div class="small_box box1">
                     <div class="portfolio_item_noside">
-                    <!--<h3><a href="http://munstur.is/baekur/hannyrdir.php">Hannyrðir</a></h3>-->
+                    <!--<h3><a href="/baekur/hannyrdir.php">Hannyrðir</a></h3>-->
                     <a href="images/altarisdukar/munstur/dukur4_mynd.jpg"><img src="images/altarisdukar/munstur/dukur4_mynd_tn.jpg" alt="" /></a>
                     </div>
                     <p>Heklaður altarisdúkur</p>
@@ -349,7 +349,7 @@
             <div class="entry_portfolio_noside">
                 <div class="small_box box1">
                     <div class="portfolio_item_noside">
-                    <!--<h3><a href="http://munstur.is/baekur/hannyrdir.php">Hannyrðir</a></h3>-->
+                    <!--<h3><a href="/baekur/hannyrdir.php">Hannyrðir</a></h3>-->
                     <a href="images/altarisdukar/munstur/dukur5_mynd.jpg"><img src="images/altarisdukar/munstur/dukur5_mynd_tn.jpg" alt="" /></a>
                     </div>
                     <p>Heklaður altarisdúkur</p>
@@ -380,13 +380,13 @@
 
             </div><!-- end inner_content-->
 
-            <?php include_once('sidebar.html') ?>
+            {{ include "/templates/sidebar.html" }}
 
         </div><!-- end content-->
 
     </div><!--end main-->
 
-        <?php include_once('footer.html') ?>
+        {{ include "/templates/footer.html" }}
 
     </div><!--end top-->
 </div><!--end wrapp_all-->

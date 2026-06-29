@@ -1,0 +1,57 @@
+localhost:3000 {
+	# Enable templates middleware to process .html files as Go templates
+	templates
+
+	# Root directory
+	root /Users/birkir/Gitbox/birkirbrynjarsson/munstur.is
+
+	# Rewrite clean URLs to .html files
+	rewrite /$ /index.html
+	rewrite /index /index.html
+	rewrite /portfolio /portfolio.html
+	rewrite /munstur /munstur.html
+	rewrite /altarisdukar /altarisdukar.html
+	rewrite /altarisdukamunstur /altarisdukamunstur.html
+	rewrite /frettabladid-2016 /frettabladid-2016.html
+	rewrite /huguroghond /huguroghond.html
+	rewrite /huguroghond-2018 /huguroghond-2018.html
+	rewrite /baekur/hannyrdir /baekur/hannyrdir.html
+	rewrite /baekur/vefnadur /baekur/vefnadur.html
+	rewrite /baekur/utsaumur /baekur/utsaumur.html
+	rewrite /baekur/jurtalitun /baekur/jurtalitun.html
+	rewrite /baekur/gomul_mynstur /baekur/gomul_mynstur.html
+	rewrite /baekur/milliverk /baekur/milliverk.html
+	rewrite /baekur/munsturbekkir /baekur/munsturbekkir.html
+	rewrite /baekur/stafabaekur /baekur/stafabaekur.html
+	rewrite /baekur/utskurdarmynstur /baekur/utskurdarmynstur.html
+	rewrite /baekur/utsogunarmynstur /baekur/utsogunarmynstur.html
+	rewrite /baekur/tuskudyr /baekur/tuskudyr.html
+	rewrite /baekur/smidakver /baekur/smidakver.html
+
+	# Backwards compatibility
+	rewrite /index.php /index.html
+	rewrite /portfolio.php /portfolio.html
+	rewrite /munstur.php /munstur.html
+	rewrite /altarisdukar.php /altarisdukar.html
+	rewrite /altarisdukamunstur.php /altarisdukamunstur.html
+	rewrite /frettabladid-2016.php /frettabladid-2016.html
+	rewrite /huguroghond.php /huguroghond.html
+	rewrite /huguroghond-2018.php /huguroghond-2018.html
+	rewrite /baekur/hannyrdir.php /baekur/hannyrdir.html
+	rewrite /baekur/vefnadur.php /baekur/vefnadur.html
+	rewrite /baekur/utsaumur.php /baekur/utsaumur.html
+	rewrite /baekur/jurtalitun.php /baekur/jurtalitun.html
+	rewrite /baekur/gomul_mynstur.php /baekur/gomul_mynstur.html
+	rewrite /baekur/milliverk.php /baekur/milliverk.html
+	rewrite /baekur/munsturbekkir.php /baekur/munsturbekkir.html
+	rewrite /baekur/stafabaekur.php /baekur/stafabaekur.html
+	rewrite /baekur/utskurdarmynstur.php /baekur/utskurdarmynstur.html
+	rewrite /baekur/utsogunarmynstur.php /baekur/utsogunarmynstur.html
+	rewrite /baekur/tuskudyr.php /baekur/tuskudyr.html
+	rewrite /baekur/smidakver.php /baekur/smidakver.html
+
+	# Serve files
+	file_server
+
+	encode gzip
+}

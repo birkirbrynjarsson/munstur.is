@@ -1,15 +1,15 @@
-<?php include_once('header.html') ?>
+{{ include "/templates/header.html" }}
 
 <body id="subpage">
 <div class="wrap_all">
     <div id="top">
 	  <div id="head">
 
-            <?php include_once('navigation.html') ?>
+            {{ include "/templates/navigation.html" }}
 
 			 <p class="breadcrumb">
           	<span class="breadcrumb_info">Þú ert hér:</span>
-            <a href="http://munstur.is/index.php">Munstur.is</a><span> » </span><a href="http://munstur.is/munstur.php">Um Munstur & Menning</a><span> » </span><span class="current_crumb">Um fyrirtækið </span></p>
+            <a href="/">Munstur.is</a><span> » </span><a href="/munstur">Um Munstur & Menning</a><span> » </span><span class="current_crumb">Um fyrirtækið </span></p>
 
     	</div><!-- end head-->
 
@@ -49,7 +49,7 @@
 
             <div class="entry">
 
-            <span class="meta">Grein sem birtist í <a href="http://www.visir.is/g/2017170429919">Fréttablaðinu 20. april 2017</a>.</span>
+            <span class="meta">Grein sem birtist í <a href="https://www.visir.is/g/2017170429919">Fréttablaðinu 20. april 2017</a>.</span>
            <h2>Jenný hlýtur heiðursviðurkenningu Menningarsjóðs Akureyrar</h2>
 
            <div class="entry-head">
@@ -96,13 +96,13 @@
 
            </div><!-- end inner_content-->
 
-           <?php include_once('sidebar.html') ?>
+           {{ include "/templates/sidebar.html" }}
 
           </div><!-- end content-->
 
       </div><!--end main-->
 
-        <?php include_once('footer.html') ?>
+        {{ include "/templates/footer.html" }}
 
     </div><!--end top-->
 	</div><!--end wrapp_all-->

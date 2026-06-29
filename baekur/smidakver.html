@@ -1,15 +1,13 @@
-<?php include_once('../header.html') ?>
-
+{{ include "/templates/header.html" }}
 <body id="subpage">
 <div class="wrap_all">
     <div id="top">
 	  <div id="head"> 
       
-            <?php include_once('../navigation.html') ?>
-			 
-			 <p class="breadcrumb">
+            {{ include "/templates/navigation.html" }}
+<p class="breadcrumb">
           	<span class="breadcrumb_info">Þú ert hér:</span> 
-            <a href="../index.html">Munstur.is</a><span> » </span><a href="../portfolio.html">Bækur</a><span> » </span><span class="current_crumb">Smíðakver </span></p>
+            <a href="/">Munstur.is</a><span> » </span><a href="/portfolio">Bækur</a><span> » </span><span class="current_crumb">Smíðakver </span></p>
 			
     	</div><!-- end head-->
         
@@ -27,7 +25,7 @@
            
            <div class="entry-content">
 <h4>samið hefur Pjétur Pjétursson (1886).</h4>
-<p><a href="/images/baekur/smidakver-1.jpg" rel="prettyPhoto[smidakver]"<img class="aligncenter" src="../images/baekur/smidakver-1_tn.jpg" alt="" /></a></p>
+<p><a href="/images/baekur/smidakver-1.jpg" rel="prettyPhoto[smidakver]"<img class="aligncenter" src="/images/baekur/smidakver-1_tn.jpg" alt="" /></a></p>
 <h3>Um höfundinn</h3>
 
 <p>Pétur Jökull Pétursson fæddist á Hákonarstöðum á Jökuldal</p>
@@ -88,7 +86,7 @@ Jenný Karlsdóttir</p>
            
            <div class="entry-content">
 <h4>eftir Jón Bernharðsson</h4>
-<p><a href="/images/baekur/smidakver-2.jpg" rel="prettyPhoto[smidakver]"<img class="aligncenter" src="../images/baekur/smidakver-2_tn.jpg" alt="" /></a></p>
+<p><a href="/images/baekur/smidakver-2.jpg" rel="prettyPhoto[smidakver]"<img class="aligncenter" src="/images/baekur/smidakver-2_tn.jpg" alt="" /></a></p>
 <h3>Um höfundinn</h3> 
 
 <p>Jón Bernharðsson   fæddist  4. júlí 1822 að Skógsnesi í Gaulverjabæjarhreppi.</p>
@@ -113,14 +111,13 @@ Jenný Karlsdóttir.</p>
 			</div><!--end entry--> 
            </div><!-- end inner_content-->
            
-           <?php include_once('../sidebar.html') ?>          
-          </div><!-- end content-->
+           {{ include "/templates/sidebar.html" }}
+</div><!-- end content-->
         
       </div><!--end main-->
         
-        <?php include_once('../footer.html') ?>
-        
-    </div><!--end top-->
+        {{ include "/templates/footer.html" }}
+</div><!--end top-->
 	</div><!--end wrapp_all-->
 
 </body>

@@ -1,15 +1,13 @@
-<?php include_once('../header.html') ?>
-
+{{ include "/templates/header.html" }}
 <body id="subpage">
 <div class="wrap_all">
     <div id="top">
 	  <div id="head"> 
       
-            <?php include_once('../navigation.html') ?>
-			 
-			 <p class="breadcrumb">
+            {{ include "/templates/navigation.html" }}
+<p class="breadcrumb">
           	<span class="breadcrumb_info">Þú ert hér:</span> 
-            <a href="../index.html">Munstur.is</a><span> » </span><a href="../portfolio.html">Bækur</a><span> » </span><span class="current_crumb">Hvítar Útsaumsgerðir </span></p>
+            <a href="/">Munstur.is</a><span> » </span><a href="/portfolio">Bækur</a><span> » </span><span class="current_crumb">Hvítar Útsaumsgerðir </span></p>
 			
     	</div><!-- end head-->
         
@@ -40,15 +38,13 @@
             
            </div><!-- end inner_content-->
            
-           <?php include_once('../sidebar.html') ?>
-                     
-          </div><!-- end content-->
+           {{ include "/templates/sidebar.html" }}
+</div><!-- end content-->
         
       </div><!--end main-->
         
-        <?php include_once('../footer.html') ?>
-        
-    </div><!--end top-->
+        {{ include "/templates/footer.html" }}
+</div><!--end top-->
 	</div><!--end wrapp_all-->
 
 </body>
